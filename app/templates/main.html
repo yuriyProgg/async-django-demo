@@ -1,0 +1,22 @@
+{% load static compress %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Async Django Demo</title>
+
+		{% compress css file %}
+		<link rel="stylesheet" href="{% static 'main.css' %}" />
+		{% endcompress %}
+
+		<script src="https://unpkg.com/htmx.org@2.0.4"></script>
+	</head>
+	<body>
+		<section>
+			<h1>Posts</h1>
+			<div hx-get="{% url 'posts' %}" hx-trigger="load" id="posts"></div>
+		</section>
+		<section>{% include 'create.html' %}</section>
+	</body>
+</html>

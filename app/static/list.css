@@ -1,0 +1,17 @@
+.btn-destroy {
+	font-size: 0.8rem;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	background-color: red;
+	color: white;
+	transition: 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		background-color: darkred;
+	}
+	&:active {
+		background-color: #fa1d1d;
+	}
+}

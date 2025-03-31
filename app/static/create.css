@@ -1,0 +1,46 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	background-color: #ccc;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	gap: 1.5rem;
+}
+
+.block {
+	max-width: 640px;
+	width: 100%;
+}
+
+.block input,
+.block textarea {
+	transition: 0.3s;
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid #333;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+}
+
+.block textarea {
+	resize: vertical;
+}
+
+.btn-create {
+	font-size: 1rem;
+	background-color: #34a300;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: #4a9f3a;
+	}
+
+	&:active {
+		background-color: #8eff4d;
+	}
+}

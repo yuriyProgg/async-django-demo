@@ -1,0 +1,16 @@
+{% load static compress %}
+
+{% compress css file %}
+<link rel="stylesheet" href="{% static 'create.css' %}" />
+{% endcompress %}
+
+<form hx-post="{% url 'posts' %}" hx-target="#posts" class="form">
+  {% csrf_token %}
+  <div class="block">
+    <input type="text" name="title" placeholder="Title" />
+  </div>
+  <div class="block">
+    <textarea name="content" placeholder="Content"></textarea>
+  </div>
+  <button type="submit" id="create" class="btn-create">Create</button>
+</form>
