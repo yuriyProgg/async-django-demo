@@ -4,4 +4,6 @@
 
 Кроме того, проект включает примеры и материалы для обучения написанию тестов, что поможет улучшить качество и надежность кода.
 
+[Ссылка на сайт.](https://async-django-demo.onrender.com/)
+
 **Теги**: django, django-async, django-compressor, django-rest-framework, drf, adrf, djangorestframework, htmx, async-django, async-programming, python, demo, web-development, backend, testing, tutorials.
