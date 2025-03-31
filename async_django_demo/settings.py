@@ -27,9 +27,13 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "async-django-demo.onrender.com",
-    "0.0.0.0",
     "localhost",
     "127.0.0.1",
+]
+
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")  # Для Render
+CSRF_TRUSTED_ORIGINS = [
+    "https://async-django-demo.onrender.com",
 ]
 
 
